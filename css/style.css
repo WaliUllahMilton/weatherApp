@@ -35,19 +35,47 @@ body {
 }
 
 input {
-    border: .1vw solid var(--darkColor);
-    border-radius: .5vw;
+    border: none;
+    border-radius: 1vw;
     outline: none;
-    height: 2vw;
+    height: 3vw;
+    width: 30vw;
     text-align: center;
 }
 
 ::placeholder {
     text-align: center;
+    color: var(--darkColor);
+    font-size: 1.3vw;
+    opacity: 0.9;
 }
 
 .search_btn {
-    font-size: 1.8vw;
-    margin-top: .2vw;
+    font-size: 1vw;
     cursor: pointer;
+    border-radius: 50%;
+    color: var(--darkColor);
+    background: #fffffff1;
+    padding: 1vw;
+}
+
+.img {
+    width: 8vw;
+    margin: 0 auto;
+}
+
+.img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.weather {
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
 }
